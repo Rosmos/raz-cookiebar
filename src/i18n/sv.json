@@ -1,0 +1,10 @@
+{
+    "settings": "Inställningar",
+    "textLabel": "Text",
+    "textDefaultValue": "Vi använder cookies på webbplatsen för att ge dig en så bra upplevelse som möjligt.",
+    "readMoreLabel": "Text för den länkade texten",
+    "readMoreDefaultValue": "Läs mer om cookies",
+    "pageLabel": "Länkmål för den länkade texten",
+    "buttonLabel": "Knapptext",
+    "buttonDefaultValue": "Ok, jag förstår"
+}

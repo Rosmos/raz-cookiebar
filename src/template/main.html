@@ -1,0 +1,62 @@
+<% if ( !cookiesDismissed ) { %>
+
+<!--eri-no-index-->
+<div class="af-cookieBar af-cookieBar--bottomRight">
+    <div class="af-cookieBar__wrapper">
+        <div class="af-cookieBar__info">
+
+            <p class="af-cookieBar__text">
+                <%= text %>
+            </p>
+
+            <a class="af-cookieBar__readMore" href="<%= pageURI %>">
+                <%= readMore %>
+            </a>
+
+        </div>
+        <button class="af-cookieBar__button"><%= buttonText %></button>
+    </div>
+</div>
+<!--/eri-no-index-->
+
+<script>
+    (function (doc, COOKIENAME, DAYS, DOMAIN) {
+        'use strict';
+
+        function setCookie(name, value, options) {
+            var settings = [name + '=' + value];
+            options = options || {};
+            if (options.days) {
+                options.date = new Date();
+                options.date.setTime(options.date.getTime() + 24 * 60 * 60 * 1000 * options.days);
+                settings.push('expires=' + options.date.toUTCString());
+            }
+            options.domain && settings.push('domain=' + options.domain);
+            settings.push('path=' + (options.path ? options.path : '/'));
+            doc.cookie = settings.join(';');
+        }
+
+        function init() {
+            var banner = doc.querySelector('.af-cookieBar');
+            if (banner) {
+                banner.addEventListener('click', function (e) {
+                    if (e.target && e.target.nodeName === 'BUTTON') {
+                        setCookie(COOKIENAME, 'dismissed', { days: DAYS, domain: DOMAIN });
+                        banner.parentNode.removeChild(banner);
+                    }
+                });
+            }
+        }
+
+        init();
+
+    }(
+        document,
+        'cookiesDismissed',
+        365
+    ));
+</script>
+
+<% } %>
+
+<!-- TODO: change cookie name and make days configurable -->

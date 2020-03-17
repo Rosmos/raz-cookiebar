@@ -1,0 +1,9 @@
+{
+    "id": "af.cookiebar",
+    "version": "1.3",
+    "name": "ÅF Cookie bar",
+    "author": "ÅF Digital Solutions",
+    "description": "A simple cookie bar webapp",
+    "helpUrl": "https://github.com/afwebteam/",
+    "type": "WebApp"
+}

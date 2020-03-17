@@ -1,21 +1,15 @@
-# Cookiebar WebApp
-
-En simpel kakstapel WebApp 💃
-
 ![Screenshot 2019-08-06 at 11 04 16](https://user-images.githubusercontent.com/15769980/62527747-0a305900-b83c-11e9-9b04-2369eb19d874.png)
+
+# Cookiebar WebApp
+A simple WebApp with four config fields: text, link text, link target and button text.
 
 ## Prerequisites
 * A SiteVision website
 * [A valid certifcate](https://developer.sitevision.se/docs/webapps/deployment/certificates-and-signing)
 * The REST-API activated on the site
 ## Setup
-To create a new project based on this boilerplate you may use [degit](https://github.com/Rich-Harris/degit) to create a copy without git history
 ```bash
-degit https://github.com/sitevision/webapp-boilerplate.git webapp-boilerplate
-```
-__OR__ if you are interested in the git history you should clone the repository
-```bash
-git clone https://github.com/sitevision/webapp-boilerplate.git
+git clone https://github.com/Rosmos/raz-cookiebar.git
 ```
 * `cd webapp-boilerplate`
 * `npm install`

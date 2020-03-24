@@ -1,9 +1,9 @@
 {
-    "id": "af.cookiebar",
+    "id": "raz.cookiebar",
     "version": "1.3",
-    "name": "ÅF Cookie bar",
-    "author": "ÅF Digital Solutions",
-    "description": "A simple cookie bar webapp",
-    "helpUrl": "https://github.com/afwebteam/",
+    "name": "Simple Cookie bar",
+    "author": "Rasmus Eriksson",
+    "description": "A simple cookie bar WebApp",
+    "helpUrl": "https://github.com/Rosmos/raz-cookiebar",
     "type": "WebApp"
 }

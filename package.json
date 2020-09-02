@@ -1,11 +1,11 @@
 {
-    "name": "af-cookiebar",
+    "name": "raz-cookiebar",
     "version": "1.0.0",
     "description": "A simple cookie bar webapp",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/afwebteam/af-cookiebar.git"
+        "url": "git+https://github.com/Rosmos/raz-cookiebar.git"
     },
     "scripts": {
         "setup": "node util/setup.js",
@@ -17,11 +17,11 @@
         "prod-deploy": "node util/prod-deploy.js"
     },
     "license": "MIT",
-    "author": "ÅF Digital Solutions",
+    "author": "Rasmus Eriksson",
     "bugs": {
-        "url": "https://github.com/afwebteam/af-cookiebar/issues"
+        "url": "https://github.com/Rosmos/raz-cookiebar/issues"
     },
-    "homepage": "https://github.com/afwebteam/af-cookiebar",
+    "homepage": "https://github.com/Rosmos/raz-cookiebar",
     "devDependencies": {
         "inquirer": "^6.2.2",
         "jsonfile": "^5.0.0",

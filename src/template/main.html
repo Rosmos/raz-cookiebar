@@ -1,20 +1,20 @@
 <% if ( !cookiesDismissed ) { %>
 
 <!--eri-no-index-->
-<div class="af-cookieBar af-cookieBar--bottomRight">
-    <div class="af-cookieBar__wrapper">
-        <div class="af-cookieBar__info">
+<div class="raz-cookieBar af-cookieBar--bottomRight">
+    <div class="raz-cookieBar__wrapper">
+        <div class="raz-cookieBar__info">
 
-            <p class="af-cookieBar__text">
+            <p class="raz-cookieBar__text">
                 <%= text %>
             </p>
 
-            <a class="af-cookieBar__readMore" href="<%= pageURI %>">
+            <a class="raz-cookieBar__readMore" href="<%= pageURI %>">
                 <%= readMore %>
             </a>
 
         </div>
-        <button class="af-cookieBar__button"><%= buttonText %></button>
+        <button class="raz-cookieBar__button"><%= buttonText %></button>
     </div>
 </div>
 <!--/eri-no-index-->
@@ -37,7 +37,7 @@
         }
 
         function init() {
-            var banner = doc.querySelector('.af-cookieBar');
+            var banner = doc.querySelector('.raz-cookieBar');
             if (banner) {
                 banner.addEventListener('click', function (e) {
                     if (e.target && e.target.nodeName === 'BUTTON') {
